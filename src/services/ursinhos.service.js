@@ -4,6 +4,7 @@ const ursinhos = [
         nome: 'Bedtime Bear ',
         descricao:
         'Bedtime Bear is a male bear. He’s always very sleepy and often talks with a yawning, sleepy voice. He likes to help everyone get a good night’s sleep, and wishes everyone sweet dreams. He has aqua blue fur and his belly badge is a blue moon with a star.',
+        //foto:''
         preco: 100.0,
     },
     {
