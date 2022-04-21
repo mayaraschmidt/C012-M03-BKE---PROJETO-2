@@ -30,43 +30,20 @@ const ursinhos = [
         nome: 'Tenderheart Bear',
         descricao:
         'Tenderheart is a male bear, who was often thought of as the face of the franchise. In the 1980s Care Bear films he was the leader of the other bears too. His original colour is brown, but later on he became orange. On his belly is a big red heart. He is also sometimes considered as the ‘evil-looking bear, with his cute but frowning eyes. Tenderheart Bear likes to help others show and express their feelings, and always encourages people to be as caring as possible.',
-        preco: 5.0,
+        preco: 50.0,
 
         id: 6,
-        nome: 'x',
+        nome: 'Good Luck Bear',
         descricao:
-        'x',
-        preco: 5.0,
+        'This male bear likes to spread good luck wherever he goes. With his green fur and lucky green leaf clover as his belly badge, he tries to bring luck to everybody. In his first appearance on the TV programme, he spoke with an Irish accent. This later changed to an American accent, before reverting back to an Irish one again! Maybe we should call him Confused Bear…',
+        preco: 60.0,
 
         id: 7,
-        nome: 'x',
+        nome: 'Grumpy Bear',
         descricao:
-        'x',
-        preco: 5.0,
+        'Naturally, this bear is a man! He has indigo blue fur and a huge rain cloud on his belly. Grumpy Bear is rarely happy, but he teaches people that it’s ok to be grumpy from time to time – just don’t let your grumpiness go too far. This cuddly male bear does truly value all of his friendships, and occasionally he smiles too!',
+        preco: 70.0,
 
-        id: 8,
-        nome: 'x',
-        descricao:
-        'x',
-        preco: 5.0,
-
-        id: 9,
-        nome: 'x',
-        descricao:
-        'x',
-        preco: 5.0,
-
-        id: 10,
-        nome: 'x',
-        descricao:
-        'x',
-        preco: 5.0,
-
-        id: 11,
-        nome: 'x',
-        descricao:
-        'x',
-        preco: 5.0,
     },
 ];
 
