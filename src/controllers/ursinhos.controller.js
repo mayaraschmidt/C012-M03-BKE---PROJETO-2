@@ -1,12 +1,8 @@
 const ursinhosService = require('../services/ursinhos.service');
 
-const homeursinhosController = (req,res) =>{
-    res.send("home ursinhos");
-  };
-
-const findUrsinhosController = (req, res) => {
+const findUrsinhosController = (req,res) => {
     const allUrsinhos = ursinhosService.findUrsinhosService();
-    res.send(allUrsinhos);
+    res.send("allUrsinhos");
   };
 
   const findUrsinhosByIdController = (req, res) => {
@@ -14,25 +10,30 @@ const findUrsinhosController = (req, res) => {
     const chosenUrsinhos = ursinhosService.findUrsinhosByIdService(idParam);
     res.send(chosenUrsinhos);
   };
-
-  const addUrsinhosController = (req,res) => {
-    let retorno;
   
-    if(req.body.id){
-      retorno = ursinhosService.addUrsinhosService(req.body);
-    }else{
-      res.send({erro: 'id é obrigatório'});
-    }
-    if(retorno == 'ok'){
-      res.send({message:'Ursinho cadastrado com sucesso!'});
-    }else{
-      res.send('ops, houve um erro, Ursinho nao foi cadastrado');
-    }
+  const createUrsinhosController = (req, res) => {
+    const ursinhos = req.body;
+    const newUrsinhos = ursinhosService.createUrsinhosService(ursinhos);
+    res.send(newUrsinhos);
   };
-
+  
+  const updateUrsinhosController = (req, res) => {
+    const idParam = +req.params.id;
+    const ursinhosEdit = req.body;
+    const updatedUrsinhos = ursinhosService.updateUrsinhosService(idParam, ursinhosEdit);
+    res.send(updatedUrsinhos);
+  };
+  
+  const deleteUrsinhosController = (req, res) => {
+    const idParam = req.params.id;
+    ursinhosService.deleteUrsinhosService(idParam);
+    res.send({ message: 'O Coração Gelado deletou seu Ursinho com sucesso!' });
+  };
+  
   module.exports = {
-    homeUrsinhoController,
-    findUrsinhoController,
-    findUrsinhoByIdController,
-    addUrsinhoController,
+    findUrsinhosController,
+    findUrsinhosByIdController,
+    createUrsinhosController,
+    updateUrsinhosController,
+    deleteUrsinhosController,
   };
